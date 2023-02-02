@@ -1,0 +1,4 @@
+/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment1/build_dir/CMakeFiles/wb.dir
+/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment1/build_dir/CMakeFiles/DeviceQuery_Solution.dir
+/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment1/build_dir/CMakeFiles/edit_cache.dir
+/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment1/build_dir/CMakeFiles/rebuild_cache.dir

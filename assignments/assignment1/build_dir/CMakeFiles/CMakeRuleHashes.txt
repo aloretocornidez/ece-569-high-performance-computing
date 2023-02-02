@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+3c09801e851ef7ebb1101080b9e88df7 CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/DeviceQuery_Solution_generated_template.cu.o
