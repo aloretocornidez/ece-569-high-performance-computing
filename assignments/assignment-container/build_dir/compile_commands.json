@@ -1,0 +1,107 @@
+[
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbArg.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbArg.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbArg.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbCUDA.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbCUDA.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbCUDA.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbDataset.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbDataset.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbDataset.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbDirectory.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbDirectory.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbDirectory.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbExit.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbExit.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbExit.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbExport.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbExport.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbExport.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbFile.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbFile.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbFile.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbImage.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbImage.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbImage.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbImport.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbImport.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbImport.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbInit.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbInit.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbInit.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbLogger.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbLogger.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbLogger.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbMPI.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbMPI.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbMPI.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbPPM.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbPPM.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbPPM.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbPath.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbPath.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbPath.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbSolution.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbSolution.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbSolution.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbSparse.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbSparse.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbSparse.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbTimer.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbTimer.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbTimer.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/wbUtils.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbUtils.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbUtils.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/wb.dir/libwb/vendor/json11.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/vendor/json11.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/vendor/json11.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/VectorAdd_DatasetGenerator.dir/hw2/VectorAdd/dataset_generator.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/hw2/VectorAdd/dataset_generator.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/hw2/VectorAdd/dataset_generator.cpp"
+},
+{
+  "directory": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/build_dir",
+  "command": "/opt/cuda/bin/g++  -I/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb -I/opt/cuda/include  -Wall -Wno-unused-function -Wno-unused-parameter -Wextra -std=c++11 -Wno-dollar-in-identifier-extension -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles/ImageColorToGrayscale_DatasetGenerator.dir/hw2/ImageColorToGrayscale/dataset_generator.cpp.o -c /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/hw2/ImageColorToGrayscale/dataset_generator.cpp",
+  "file": "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/hw2/ImageColorToGrayscale/dataset_generator.cpp"
+}
+]
