@@ -9,8 +9,8 @@
 # CMake Ignore
 **/CMakeLists.txt.user
 **/CMakeCache.txt
-**/CMakeFiles
-**/CMakeScripts
+**/CMakeFiles//
+**/CMakeScripts/
 **/Testing
 **/Makefile
 **/cmake_install.cmake
@@ -19,7 +19,13 @@
 **/CTestTestfile.cmake
 **/_deps
 
-*.raw
-*.pbm
+**.raw
+**.pbm
+**.txt
 
+
+# Do not ignore these directories.
 !**/assignment-documents/**
+!**/
+!activities/
+!resources/
