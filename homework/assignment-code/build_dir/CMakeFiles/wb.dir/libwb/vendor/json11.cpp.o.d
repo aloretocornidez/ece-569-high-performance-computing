@@ -1,7 +1,7 @@
 CMakeFiles/wb.dir/libwb/vendor/json11.cpp.o: \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/vendor/json11.cpp \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/vendor/json11.cpp \
  /usr/include/stdc-predef.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/vendor/json11.hpp \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/vendor/json11.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/string \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/os_defines.h \

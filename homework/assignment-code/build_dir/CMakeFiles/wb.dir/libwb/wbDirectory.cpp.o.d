@@ -1,7 +1,7 @@
 CMakeFiles/wb.dir/libwb/wbDirectory.cpp.o: \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbDirectory.cpp \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbDirectory.cpp \
  /usr/include/stdc-predef.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wb.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wb.h \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -61,7 +61,7 @@ CMakeFiles/wb.dir/libwb/wbDirectory.cpp.o: \
  /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
  /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/vendor/json11.hpp \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/vendor/json11.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/string \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stringfwd.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/memoryfwd.h \
@@ -168,11 +168,11 @@ CMakeFiles/wb.dir/libwb/wbDirectory.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/atomic_base.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/atomic_lockfree_defines.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/backward/auto_ptr.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbTypes.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbAssert.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbTypes.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbAssert.h \
  /usr/include/assert.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbMalloc.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbString.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbMalloc.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbString.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/iostream \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ostream \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ios \
@@ -198,8 +198,8 @@ CMakeFiles/wb.dir/libwb/wbDirectory.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/istream.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/sstream \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/sstream.tcc \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbUtils.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/vendor/sole.hpp \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbUtils.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/vendor/sole.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/functional \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/std_function.h \
  /usr/include/memory.h \
@@ -243,24 +243,24 @@ CMakeFiles/wb.dir/libwb/wbDirectory.cpp.o: \
  /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
  /usr/include/bits/ioctl-types.h /usr/include/sys/ttydefaults.h \
  /usr/include/sys/time.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbArg.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbCUDA.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbCast.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbComparator.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbDirectory.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbExit.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbExport.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbFile.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbPPM.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbImage.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbImport.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbInit.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbLogger.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbMD5.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbMPI.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbSolution.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbSparse.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbThrust.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbTimer.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbPath.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/wbDataset.h
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbArg.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbCUDA.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbCast.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbComparator.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbDirectory.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbExit.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbExport.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbFile.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbPPM.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbImage.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbImport.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbInit.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbLogger.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbMD5.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbMPI.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbSolution.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbSparse.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbThrust.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbTimer.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbPath.h \
+ /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbDataset.h

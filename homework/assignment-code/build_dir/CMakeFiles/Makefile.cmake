@@ -10,15 +10,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeSystem.cmake"
-  "CMakeFiles/ImageColorToGrayscale_Solution.dir/hw2/ImageColorToGrayscale/ImageColorToGrayscale_Solution_generated_solution.cu.o.cmake.pre-gen"
-  "CMakeFiles/ImageColorToGrayscale_Solution.dir/hw2/ImageColorToGrayscale/ImageColorToGrayscale_Solution_generated_solution.cu.o.depend"
-  "CMakeFiles/VectorAdd_Solution.dir/hw2/VectorAdd/VectorAdd_Solution_generated_solution.cu.o.cmake.pre-gen"
-  "CMakeFiles/VectorAdd_Solution.dir/hw2/VectorAdd/VectorAdd_Solution_generated_solution.cu.o.depend"
-  "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/CMakeLists.txt"
-  "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/hw2/ImageColorToGrayscale/sources.cmake"
-  "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/hw2/VectorAdd/sources.cmake"
-  "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/hw2/sources.cmake"
-  "/home/alan-manuel/Downloads/school/569-high-performance-computing/assignments/assignment-container/labs/libwb/sources.cmake"
+  "CMakeFiles/BasicMatrixMultiplication_Solution.dir/hw3/BasicMatrixMultiplication/BasicMatrixMultiplication_Solution_generated_solution.cu.o.cmake.pre-gen"
+  "CMakeFiles/BasicMatrixMultiplication_Solution.dir/hw3/BasicMatrixMultiplication/BasicMatrixMultiplication_Solution_generated_solution.cu.o.depend"
+  "CMakeFiles/TiledMatrixMultiplication_Solution.dir/hw3/TiledMatrixMultiplication/TiledMatrixMultiplication_Solution_generated_solution.cu.o.cmake.pre-gen"
+  "CMakeFiles/TiledMatrixMultiplication_Solution.dir/hw3/TiledMatrixMultiplication/TiledMatrixMultiplication_Solution_generated_solution.cu.o.depend"
+  "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/CMakeLists.txt"
+  "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/hw3/BasicMatrixMultiplication/sources.cmake"
+  "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/hw3/TiledMatrixMultiplication/sources.cmake"
+  "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/hw3/sources.cmake"
+  "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/sources.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -56,18 +56,18 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/VectorAdd_Solution.dir/hw2/VectorAdd/VectorAdd_Solution_generated_solution.cu.o.cmake.pre-gen"
-  "CMakeFiles/ImageColorToGrayscale_Solution.dir/hw2/ImageColorToGrayscale/ImageColorToGrayscale_Solution_generated_solution.cu.o.cmake.pre-gen"
-  "CMakeFiles/VectorAdd_Solution.dir/hw2/VectorAdd/VectorAdd_Solution_generated_solution.cu.o.Release.cmake"
-  "CMakeFiles/ImageColorToGrayscale_Solution.dir/hw2/ImageColorToGrayscale/ImageColorToGrayscale_Solution_generated_solution.cu.o.Release.cmake"
+  "CMakeFiles/BasicMatrixMultiplication_Solution.dir/hw3/BasicMatrixMultiplication/BasicMatrixMultiplication_Solution_generated_solution.cu.o.cmake.pre-gen"
+  "CMakeFiles/TiledMatrixMultiplication_Solution.dir/hw3/TiledMatrixMultiplication/TiledMatrixMultiplication_Solution_generated_solution.cu.o.cmake.pre-gen"
+  "CMakeFiles/BasicMatrixMultiplication_Solution.dir/hw3/BasicMatrixMultiplication/BasicMatrixMultiplication_Solution_generated_solution.cu.o.Release.cmake"
+  "CMakeFiles/TiledMatrixMultiplication_Solution.dir/hw3/TiledMatrixMultiplication/TiledMatrixMultiplication_Solution_generated_solution.cu.o.Release.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/wb.dir/DependInfo.cmake"
-  "CMakeFiles/VectorAdd_Solution.dir/DependInfo.cmake"
-  "CMakeFiles/VectorAdd_DatasetGenerator.dir/DependInfo.cmake"
-  "CMakeFiles/ImageColorToGrayscale_Solution.dir/DependInfo.cmake"
-  "CMakeFiles/ImageColorToGrayscale_DatasetGenerator.dir/DependInfo.cmake"
+  "CMakeFiles/BasicMatrixMultiplication_Solution.dir/DependInfo.cmake"
+  "CMakeFiles/BasicMatrixMultiplication_DatasetGenerator.dir/DependInfo.cmake"
+  "CMakeFiles/TiledMatrixMultiplication_Solution.dir/DependInfo.cmake"
+  "CMakeFiles/TiledMatrixMultiplication_DatasetGenerator.dir/DependInfo.cmake"
   )
