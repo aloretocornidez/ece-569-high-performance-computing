@@ -105,8 +105,9 @@ int main(int argc, char **argv)
   //@@(Complete) Initialize the grid and block dimensions here
   // set block size to 16,16 and determine the grid dimensions
   // use dim3 structure for setting block and grid dimensions
-  const dim3 threadsPerBlock(16, 16);
-  const dim3 blocksPerGrid(ceil(numCColumns / 16.0), ceil(numCRows / 16.0));
+  int blockSize = 16;
+  const dim3 threadsPerBlock(blockSize, blockSize);
+  const dim3 blocksPerGrid(ceil(numCColumns / (float)blockSize), ceil(numCRows / (float)blockSize));
 
   wbTime_start(Compute, "Performing CUDA computation");
   //@@(Complete) Launch the GPU Kernel here

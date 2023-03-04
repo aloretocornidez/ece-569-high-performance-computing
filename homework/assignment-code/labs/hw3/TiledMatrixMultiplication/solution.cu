@@ -12,7 +12,7 @@
     }                                                                \
   } while (0)
 
-#define TILE_WIDTH 16
+#define TILE_WIDTH 32
 
 // Compute C = A * B
 __global__ void matrixMultiplyShared(float *A, float *B, float *C,
@@ -92,8 +92,8 @@ int main(int argc, char **argv)
   numCColumns = numBColumns; // set to correct value
 
   // CUSTOM CODE REMOVE BEFORE SUBMISSION
-  if (numCColumns != numCRows)
-    wbLog(TRACE, "The output is not a square matrix: ", numCRows, " x ", numCColumns);
+  // if (numCColumns != numCRows)
+  //   wbLog(TRACE, "The output is not a square matrix: ", numCRows, " x ", numCColumns);
 
   //@@ Allocate the hostC matrix
   hostC = (float *)malloc(numCRows * numCColumns * sizeof(float));
