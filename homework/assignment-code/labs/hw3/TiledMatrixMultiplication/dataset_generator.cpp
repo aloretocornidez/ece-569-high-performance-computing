@@ -128,21 +128,24 @@ int main()
   base_dir = wbPath_join(wbDirectory_current(),
                          "TiledMatrixMultiplication", "Dataset");
 
+  // // create_dataset(0, 2048, 2048, 2048);
+  // // create_dataset(1, 2051,2051,2051);
+  // // create_dataset(2, 4096,2048,4096);
+  // // create_dataset(3, 4096,2047,4095);
+  // create_dataset(0, 32, 32, 32);
+  // create_dataset(1, 512, 512, 512);
+  // create_dataset(2, 1024, 1024, 1024);
+  // create_dataset(3, 2048, 2048, 2048);
 
-  create_dataset(0, 2048, 2048, 2048);
-  create_dataset(1, 2051,2051,2051);
-  create_dataset(2, 4096,2048,4096);
-  create_dataset(3, 4096,2047,4095);
-  
-  // create_dataset(0, 16, 16, 16);
-  // create_dataset(1, 64, 64, 64);
-  // create_dataset(2, 64, 128, 64);
-  // create_dataset(3, 112, 48, 16);
-  // create_dataset(4, 84, 84, 84);
-  // create_dataset(5, 80, 99, 128);
-  // create_dataset(6, 128, 128, 128);
-  // create_dataset(7, 100, 100, 100);
-  // create_dataset(8, 134, 130, 150);
-  // create_dataset(9, 417, 210, 519);
+  create_dataset(0, 16, 16, 16);
+  create_dataset(1, 64, 64, 64);
+  create_dataset(2, 64, 128, 64);
+  create_dataset(3, 112, 48, 16);
+  create_dataset(4, 84, 84, 84);
+  create_dataset(5, 80, 99, 128);
+  create_dataset(6, 128, 128, 128);
+  create_dataset(7, 100, 100, 100);
+  create_dataset(8, 134, 130, 150);
+  create_dataset(9, 417, 210, 519);
   return 0;
 }

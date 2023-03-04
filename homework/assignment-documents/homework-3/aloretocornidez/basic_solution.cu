@@ -1,3 +1,4 @@
+
 #include <wb.h>
 
 #define wbCheck(stmt)                                                \
@@ -12,52 +13,32 @@
     }                                                                \
   } while (0)
 
-#define TILE_WIDTH 16
-
 // Compute C = A * B
-__global__ void matrixMultiplyShared(float *A, float *B, float *C,
-                                     int numARows, int numAColumns,
-                                     int numBRows, int numBColumns,
-                                     int numCRows, int numCColumns)
+__global__ void matrixMultiply(float *A, float *B, float *C, int numARows,
+                               int numAColumns, int numBRows,
+                               int numBColumns, int numCRows,
+                               int numCColumns)
 {
-  //@@ Insert code to implement matrix multiplication here
-  //@@ You have to use tiling with shared memory for arbitrary size
+  //@@ Insert code to implement basic matrix multiplication for
+  //@@ arbitrary size using global memory.
   int row = blockIdx.y * blockDim.y + threadIdx.y;
   int column = blockIdx.x * blockDim.x + threadIdx.x;
-
-  __shared__ float Ashared[TILE_WIDTH][TILE_WIDTH];
-  __shared__ float Bshared[TILE_WIDTH][TILE_WIDTH];
-
-  // Accumulator value
-  float cValue = 0;
-
-  for (int i = 0; i < (TILE_WIDTH + numAColumns - 1) / TILE_WIDTH; i++)
-  {
-    // Copying the matrices from global memory to shared memory.
-    if (i * TILE_WIDTH + threadIdx.x < numAColumns && row < numARows)
-      Ashared[threadIdx.y][threadIdx.x] = A[row * numAColumns + i * TILE_WIDTH + threadIdx.x];
-    // If the thread is out of bounds, just set the value at that address to zero so that accumulation stays the same. (Saves conditions)
-    else
-      Ashared[threadIdx.y][threadIdx.x] = 0.0;
-
-    // Copying the matrices from global memory to shared memory.
-    if (i * TILE_WIDTH + threadIdx.y < numBRows && column < numBColumns)
-      Bshared[threadIdx.y][threadIdx.x] = B[(i * TILE_WIDTH + threadIdx.y) * numBColumns + column];
-    // If the thread is out of bounds, just set the value at that address to zero so that accumulation stays the same. (Saves conditions)
-    else
-      Bshared[threadIdx.y][threadIdx.x] = 0.0;
-
-    __syncthreads();
-
-    for (int i = 0; i < TILE_WIDTH; i++)
-      cValue += Ashared[threadIdx.y][i] * Bshared[i][threadIdx.x];
-
-    __syncthreads();
-  }
 
   // Boundary condition to make sure only threads that need to conduct calculations are participating.
   if (row < numCRows && column < numCColumns)
   {
+    // Accumulator value
+    float cValue = 0;
+
+    for (int i = 0; i < numBRows; i++)
+    {
+      
+      float aValue = A[row * numAColumns + i];
+      float bValue = B[i * numBColumns + column];
+
+      cValue += aValue * bValue;
+    }
+
     C[row * numCColumns + column] = cValue;
   }
 }
@@ -75,9 +56,8 @@ int main(int argc, char **argv)
   int numAColumns; // number of columns in the matrix A
   int numBRows;    // number of rows in the matrix B
   int numBColumns; // number of columns in the matrix B
-  int numCRows;    // number of rows in the matrix C(you have to set this)
-  int numCColumns; // number of columns in the matrix C (you have to set
-                   // this)
+  int numCRows;    // number of rows in the matrix C (you have to set this)
+  int numCColumns; // number of columns in the matrix C (you have to set this)
 
   args = wbArg_read(argc, argv);
 
@@ -87,15 +67,18 @@ int main(int argc, char **argv)
   hostB = (float *)wbImport(wbArg_getInputFile(args, 1), &numBRows,
                             &numBColumns);
 
-  //@@ Set numCRows and numCColumns
+  //@@Complete Set numCRows and numCColumns
+  // If the dimensions for a matrix multiplication are not correct, then return with an error.
+  if ((numAColumns != numBRows))
+  {
+    return -1;
+  }
+
+  // Set the correct number rows and columns for the output matrix.
   numCRows = numARows;       // set to correct value
   numCColumns = numBColumns; // set to correct value
 
-  // CUSTOM CODE REMOVE BEFORE SUBMISSION
-  // if (numCColumns != numCRows)
-  //   wbLog(TRACE, "The output is not a square matrix: ", numCRows, " x ", numCColumns);
-
-  //@@ Allocate the hostC matrix
+  //@@(Complete) Allocate the hostC matrix
   hostC = (float *)malloc(numCRows * numCColumns * sizeof(float));
 
   wbTime_stop(Generic, "Importing data and creating memory on host");
@@ -105,7 +88,7 @@ int main(int argc, char **argv)
   wbLog(TRACE, "The dimensions of C are ", numCRows, " x ", numCColumns);
 
   wbTime_start(GPU, "Allocating GPU memory.");
-  //@@ Allocate GPU memory here
+  //@@(Complete) Allocate GPU memory here for A, B and C
   cudaMalloc((void **)&deviceA, numAColumns * numARows * sizeof(float));
   cudaMalloc((void **)&deviceB, numBColumns * numBRows * sizeof(float));
   cudaMalloc((void **)&deviceC, numCColumns * numCRows * sizeof(float));
@@ -113,31 +96,31 @@ int main(int argc, char **argv)
   wbTime_stop(GPU, "Allocating GPU memory.");
 
   wbTime_start(GPU, "Copying input memory to the GPU.");
-  //@@ Copy memory to the GPU here
+  //@@(Complete) Copy memory to the GPU here for A and B
   cudaMemcpy(deviceA, hostA, sizeof(float) * numAColumns * numARows, cudaMemcpyHostToDevice);
   cudaMemcpy(deviceB, hostB, sizeof(float) * numBColumns * numBRows, cudaMemcpyHostToDevice);
 
   wbTime_stop(GPU, "Copying input memory to the GPU.");
 
-  //@@ Initialize the grid and block dimensions here
-  // note that TILE_WIDTH is set to 16 on line number 13.
-  const dim3 threadsPerBlock(TILE_WIDTH, TILE_WIDTH);
-
-  const dim3 blocksPerGrid(ceil((numCColumns + TILE_WIDTH - 1.0) / TILE_WIDTH), ceil((numCRows + TILE_WIDTH - 1.0) / TILE_WIDTH));
-  // const dim3 blocksPerGrid(ceil(numCColumns / (TILE_WIDTH)), ceil(numCRows / TILE_WIDTH));
+  //@@(Complete) Initialize the grid and block dimensions here
+  // set block size to 16,16 and determine the grid dimensions
+  // use dim3 structure for setting block and grid dimensions
+  int blockSize = 16;
+  const dim3 threadsPerBlock(blockSize, blockSize);
+  const dim3 blocksPerGrid(ceil(numCColumns / (float)blockSize), ceil(numCRows / (float)blockSize));
 
   wbTime_start(Compute, "Performing CUDA computation");
-  //@@ Launch the GPU Kernel here
-  matrixMultiplyShared<<<blocksPerGrid, threadsPerBlock>>>(deviceA, deviceB, deviceC,
-                                                           numARows, numAColumns,
-                                                           numBRows, numBColumns,
-                                                           numCRows, numCColumns);
+  //@@(Complete) Launch the GPU Kernel here
+  matrixMultiply<<<blocksPerGrid, threadsPerBlock>>>(deviceA, deviceB, deviceC,
+                                                     numARows, numAColumns,
+                                                     numBRows, numBColumns,
+                                                     numCRows, numCColumns);
 
   cudaDeviceSynchronize();
   wbTime_stop(Compute, "Performing CUDA computation");
 
   wbTime_start(Copy, "Copying output memory to the CPU");
-  //@@ Copy the GPU memory back to the CPU here
+  //@@(Complete) Copy the GPU memory back to the CPU here
   cudaMemcpy(hostA, deviceA, sizeof(float) * numARows * numAColumns, cudaMemcpyDeviceToHost);
   cudaMemcpy(hostB, deviceB, sizeof(float) * numBRows * numBColumns, cudaMemcpyDeviceToHost);
   cudaMemcpy(hostC, deviceC, sizeof(float) * numCRows * numCColumns, cudaMemcpyDeviceToHost);
@@ -145,7 +128,7 @@ int main(int argc, char **argv)
   wbTime_stop(Copy, "Copying output memory to the CPU");
 
   wbTime_start(GPU, "Freeing GPU Memory");
-  //@@ Free the GPU memory here
+  //@@(Complete) Free the GPU memory here
   cudaFree(deviceA);
   cudaFree(deviceB);
   cudaFree(deviceC);
