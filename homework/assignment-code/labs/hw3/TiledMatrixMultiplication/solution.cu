@@ -28,36 +28,36 @@ __global__ void matrixMultiplyShared(float *A, float *B, float *C,
   __shared__ float Ashared[TILE_WIDTH][TILE_WIDTH];
   __shared__ float Bshared[TILE_WIDTH][TILE_WIDTH];
 
+  // Accumulator value
+  float cValue = 0;
+
+  for (int i = 0; i < (TILE_WIDTH + numAColumns - 1) / TILE_WIDTH; i++)
+  {
+    // Copying the matrices from global memory to shared memory.
+    if (i * TILE_WIDTH + threadIdx.x < numAColumns && row < numARows)
+      Ashared[threadIdx.y][threadIdx.x] = A[row * numAColumns + i * TILE_WIDTH + threadIdx.x];
+    // If the thread is out of bounds, just set the value at that address to zero so that accumulation stays the same. (Saves conditions)
+    else
+      Ashared[threadIdx.y][threadIdx.x] = 0.0;
+
+    // Copying the matrices from global memory to shared memory.
+    if (i * TILE_WIDTH + threadIdx.y < numBRows && column < numBColumns)
+      Bshared[threadIdx.y][threadIdx.x] = B[(i * TILE_WIDTH + threadIdx.y) * numBColumns + column];
+    // If the thread is out of bounds, just set the value at that address to zero so that accumulation stays the same. (Saves conditions)
+    else
+      Bshared[threadIdx.y][threadIdx.x] = 0.0;
+
+    __syncthreads();
+
+    for (int i = 0; i < TILE_WIDTH; i++)
+      cValue += Ashared[threadIdx.y][i] * Bshared[i][threadIdx.x];
+
+    __syncthreads();
+  }
+
   // Boundary condition to make sure only threads that need to conduct calculations are participating.
   if (row < numCRows && column < numCColumns)
   {
-    // Accumulator value
-    float cValue = 0;
-
-    for (int i = 0; i < (TILE_WIDTH + numAColumns - 1) / TILE_WIDTH; i++)
-    {
-      // Copying the matrices from global memory to shared memory.
-      if (i * TILE_WIDTH + threadIdx.x < numAColumns && row < numARows)
-        Ashared[threadIdx.y][threadIdx.x] = A[row * numAColumns + i * TILE_WIDTH + threadIdx.x];
-      // If the thread is out of bounds, just set the value at that address to zero so that accumulation stays the same. (Saves conditions)
-      else
-        Ashared[threadIdx.y][threadIdx.x] = 0.0;
-
-      // Copying the matrices from global memory to shared memory.
-      if (i * TILE_WIDTH + threadIdx.y < numBRows && column < numBColumns)
-        Bshared[threadIdx.y][threadIdx.x] = B[(i * TILE_WIDTH + threadIdx.y) * numBColumns + column];
-      // If the thread is out of bounds, just set the value at that address to zero so that accumulation stays the same. (Saves conditions)
-      else
-        Bshared[threadIdx.y][threadIdx.x] = 0.0;
-
-      __syncthreads();
-
-      for (int i = 0; i < TILE_WIDTH; i++)
-        cValue += Ashared[threadIdx.y][i] * Bshared[i][threadIdx.x];
-
-      __syncthreads();
-    }
-
     C[row * numCColumns + column] = cValue;
   }
 }
@@ -90,9 +90,13 @@ int main(int argc, char **argv)
   //@@ Set numCRows and numCColumns
   numCRows = numARows;       // set to correct value
   numCColumns = numBColumns; // set to correct value
+
+  // CUSTOM CODE REMOVE BEFORE SUBMISSION
+  if (numCColumns != numCRows)
+    wbLog(TRACE, "The output is not a square matrix: ", numCRows, " x ", numCColumns);
+
   //@@ Allocate the hostC matrix
   hostC = (float *)malloc(numCRows * numCColumns * sizeof(float));
-
 
   wbTime_stop(Generic, "Importing data and creating memory on host");
 
@@ -119,7 +123,7 @@ int main(int argc, char **argv)
   // note that TILE_WIDTH is set to 16 on line number 13.
   const dim3 threadsPerBlock(TILE_WIDTH, TILE_WIDTH);
 
-  const dim3 blocksPerGrid((numCColumns + TILE_WIDTH - 1) / TILE_WIDTH, (numCRows + TILE_WIDTH - 1) / TILE_WIDTH);
+  const dim3 blocksPerGrid(ceil((numCColumns + TILE_WIDTH - 1.0) / TILE_WIDTH), ceil((numCRows + TILE_WIDTH - 1.0) / TILE_WIDTH));
   // const dim3 blocksPerGrid(ceil(numCColumns / (TILE_WIDTH)), ceil(numCRows / TILE_WIDTH));
 
   wbTime_start(Compute, "Performing CUDA computation");
