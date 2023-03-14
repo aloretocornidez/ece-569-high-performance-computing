@@ -21,14 +21,97 @@ $ ./reduce > out.txt
 
 __global__ void global_reduce_stride(float *d_out, float *d_in)
 {
+    int myId = threadIdx.x + blockDim.x * blockIdx.x;
+    int tid = threadIdx.x;
+
+    for (int stride = 1; stride < blockDim.x; stride *= 2)
+    {
+        __syncthreads();
+
+        if (myId % 2 * stride == 0)
+        {
+            d_in[myId] += d_in[myId + stride];
+        }
+    }
+
+    if (tid == 0)
+    {
+        d_out[blockIdx.x] = d_in[myId];
+    }
 }
 
 __global__ void shared_reduce_stride(float *d_out, float *d_in)
 {
+    // shared memory
+    extern __shared__ float sdata[];
+    //
+
+    int myId = threadIdx.x + blockDim.x * blockIdx.x;
+    int tid = threadIdx.x;
+
+    //
+    sdata[tid] = d_in[myId];
+
+    //
+
+    for (int stride = 1; stride < blockDim.x; stride *= 2)
+    {
+        // The threads must be synchronized here so that they all have the proper data before starting computation.
+        __syncthreads();
+
+        if (myId % 2 * stride == 0)
+        {
+            sdata[tid] += sdata[tid + stride];
+        }
+    }
+
+    if (tid == 0)
+    {
+        d_out[blockIdx.x] = sdata[tid];
+    }
 }
 
 __global__ void shared_reduce_stride_nodiverge(float *d_out, float *d_in)
 {
+    // shared memory
+    extern __shared__ float sdata[];
+    //
+
+    int myId = threadIdx.x + blockDim.x * blockIdx.x;
+    int tid = threadIdx.x;
+
+    //
+    sdata[tid] = d_in[myId];
+
+    //
+
+    // for (int stride = blockDim.x; stride > 1; stride = stride / 2)
+    // {
+    //     // The threads must be synchronized here so that they all have the proper data before starting computation.
+    //     __syncthreads();
+
+    //     if (myId % 2 * stride == 0)
+    //     {
+    //         sdata[tid] += sdata[tid + stride];
+    //     }
+    // }
+    
+    for (int stride = 1; stride > blockDim.x; stride *= 2)
+    {
+        // The threads must be synchronized here so that they all have the proper data before starting computation.
+        __syncthreads();
+
+        int index = 2 * stride * tid;
+        if (index < blockDim.x)
+        {
+            sdata[index] += sdata[index + stride];
+        }
+    }
+
+    if (tid == 0)
+    {
+        d_out[blockIdx.x] = sdata[tid];
+    }
 }
 
 __global__ void shared_reduce_reverse(float *d_out, const float *d_in)
