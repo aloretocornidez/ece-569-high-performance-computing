@@ -114,7 +114,7 @@ endmacro(add_lab_solution)
 
 macro(add_lab_template NAME SOURCES)
     # template code is not meant to be compilable,
-    # so we do not compile it. Enable the BUILD_TEMPLATE
+    # so we do not copile it. Enable the BUILD_TEMPLATE
     # flag during cmake generation to override this
     # behavior
 	if (BUILD_TEMPLATE)
@@ -156,4 +156,4 @@ if (BUILD_LIBWB_LIBRARY)
 endif (BUILD_LIBWB_LIBRARY)
 
 
-include(hw3/sources.cmake)
+include(hw1/sources.cmake)

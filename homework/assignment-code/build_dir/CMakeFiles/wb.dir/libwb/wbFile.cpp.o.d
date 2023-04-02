@@ -1,14 +1,14 @@
 CMakeFiles/wb.dir/libwb/wbFile.cpp.o: \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbFile.cpp \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbFile.cpp \
  /usr/include/stdc-predef.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wb.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wb.h \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/stddef.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/stdarg.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/stddef.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/stdarg.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/types/__fpos_t.h \
  /usr/include/bits/types/__mbstate_t.h \
@@ -17,11 +17,10 @@ CMakeFiles/wb.dir/libwb/wbFile.cpp.o: \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
  /usr/include/bits/floatn-common.h /usr/include/bits/stdio.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/stdlib.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/cstdlib \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/c++config.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/os_defines.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/12.2.1/stdlib.h /usr/include/c++/12.2.1/cstdlib \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/bits/types/locale_t.h \
  /usr/include/bits/types/__locale_t.h /usr/include/sys/types.h \
@@ -39,12 +38,11 @@ CMakeFiles/wb.dir/libwb/wbFile.cpp.o: \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/std_abs.h \
- /usr/include/string.h /usr/include/strings.h /usr/include/time.h \
- /usr/include/bits/time.h /usr/include/bits/timex.h \
- /usr/include/bits/types/struct_tm.h \
+ /usr/include/c++/12.2.1/bits/std_abs.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/time.h /usr/include/bits/time.h \
+ /usr/include/bits/timex.h /usr/include/bits/types/struct_tm.h \
  /usr/include/bits/types/struct_itimerspec.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/stdint.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-uintn.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/bits/struct_stat.h \
@@ -61,181 +59,154 @@ CMakeFiles/wb.dir/libwb/wbFile.cpp.o: \
  /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
  /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/vendor/json11.hpp \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/string \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stringfwd.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/memoryfwd.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/char_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_algobase.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/functexcept.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/exception_defines.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/cpp_type_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ext/type_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ext/numeric_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_pair.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/move.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/type_traits \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_iterator_base_types.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_iterator_base_funcs.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/concept_check.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/debug/assertions.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_iterator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/ptr_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/debug/debug.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/predefined_ops.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/postypes.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/cwchar \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/vendor/json11.hpp \
+ /usr/include/c++/12.2.1/string /usr/include/c++/12.2.1/bits/stringfwd.h \
+ /usr/include/c++/12.2.1/bits/memoryfwd.h \
+ /usr/include/c++/12.2.1/bits/char_traits.h \
+ /usr/include/c++/12.2.1/bits/postypes.h /usr/include/c++/12.2.1/cwchar \
  /usr/include/wchar.h /usr/include/bits/types/wint_t.h \
- /usr/include/bits/types/mbstate_t.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/cstdint \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/c++allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ext/new_allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/new \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/exception.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/localefwd.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/c++locale.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/clocale \
- /usr/include/locale.h /usr/include/bits/locale.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/iosfwd \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/cctype \
- /usr/include/ctype.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/ostream_insert.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/cxxabi_forced.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_function.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/backward/binders.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/range_access.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/initializer_list \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/basic_string.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ext/atomicity.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/gthr.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/gthr-default.h \
+ /usr/include/bits/types/mbstate_t.h /usr/include/c++/12.2.1/type_traits \
+ /usr/include/c++/12.2.1/cstdint /usr/include/c++/12.2.1/bits/allocator.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/12.2.1/bits/new_allocator.h /usr/include/c++/12.2.1/new \
+ /usr/include/c++/12.2.1/bits/exception.h \
+ /usr/include/c++/12.2.1/bits/functexcept.h \
+ /usr/include/c++/12.2.1/bits/exception_defines.h \
+ /usr/include/c++/12.2.1/bits/move.h \
+ /usr/include/c++/12.2.1/bits/cpp_type_traits.h \
+ /usr/include/c++/12.2.1/bits/localefwd.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/12.2.1/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/12.2.1/iosfwd \
+ /usr/include/c++/12.2.1/cctype /usr/include/ctype.h \
+ /usr/include/c++/12.2.1/bits/ostream_insert.h \
+ /usr/include/c++/12.2.1/bits/cxxabi_forced.h \
+ /usr/include/c++/12.2.1/bits/stl_iterator_base_types.h \
+ /usr/include/c++/12.2.1/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/12.2.1/bits/concept_check.h \
+ /usr/include/c++/12.2.1/debug/assertions.h \
+ /usr/include/c++/12.2.1/bits/stl_iterator.h \
+ /usr/include/c++/12.2.1/ext/type_traits.h \
+ /usr/include/c++/12.2.1/bits/ptr_traits.h \
+ /usr/include/c++/12.2.1/bits/stl_function.h \
+ /usr/include/c++/12.2.1/backward/binders.h \
+ /usr/include/c++/12.2.1/ext/numeric_traits.h \
+ /usr/include/c++/12.2.1/bits/stl_algobase.h \
+ /usr/include/c++/12.2.1/bits/stl_pair.h \
+ /usr/include/c++/12.2.1/bits/utility.h \
+ /usr/include/c++/12.2.1/debug/debug.h \
+ /usr/include/c++/12.2.1/bits/predefined_ops.h \
+ /usr/include/c++/12.2.1/bits/refwrap.h \
+ /usr/include/c++/12.2.1/bits/invoke.h \
+ /usr/include/c++/12.2.1/bits/range_access.h \
+ /usr/include/c++/12.2.1/initializer_list \
+ /usr/include/c++/12.2.1/bits/basic_string.h \
+ /usr/include/c++/12.2.1/ext/alloc_traits.h \
+ /usr/include/c++/12.2.1/bits/alloc_traits.h \
+ /usr/include/c++/12.2.1/bits/stl_construct.h \
+ /usr/include/c++/12.2.1/ext/string_conversions.h \
+ /usr/include/c++/12.2.1/cstdio /usr/include/c++/12.2.1/cerrno \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/bits/types/error_t.h \
+ /usr/include/c++/12.2.1/bits/charconv.h \
+ /usr/include/c++/12.2.1/bits/functional_hash.h \
+ /usr/include/c++/12.2.1/bits/hash_bytes.h \
+ /usr/include/c++/12.2.1/bits/basic_string.tcc \
+ /usr/include/c++/12.2.1/vector \
+ /usr/include/c++/12.2.1/bits/stl_uninitialized.h \
+ /usr/include/c++/12.2.1/bits/stl_vector.h \
+ /usr/include/c++/12.2.1/bits/stl_bvector.h \
+ /usr/include/c++/12.2.1/bits/vector.tcc /usr/include/c++/12.2.1/map \
+ /usr/include/c++/12.2.1/bits/stl_tree.h \
+ /usr/include/c++/12.2.1/ext/aligned_buffer.h \
+ /usr/include/c++/12.2.1/bits/stl_map.h /usr/include/c++/12.2.1/tuple \
+ /usr/include/c++/12.2.1/bits/uses_allocator.h \
+ /usr/include/c++/12.2.1/bits/stl_multimap.h \
+ /usr/include/c++/12.2.1/bits/erase_if.h /usr/include/c++/12.2.1/memory \
+ /usr/include/c++/12.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/12.2.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/12.2.1/bits/align.h /usr/include/c++/12.2.1/bit \
+ /usr/include/c++/12.2.1/bits/unique_ptr.h \
+ /usr/include/c++/12.2.1/bits/shared_ptr.h \
+ /usr/include/c++/12.2.1/bits/shared_ptr_base.h \
+ /usr/include/c++/12.2.1/typeinfo \
+ /usr/include/c++/12.2.1/bits/allocated_ptr.h \
+ /usr/include/c++/12.2.1/ext/atomicity.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
  /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
  /usr/include/bits/setjmp.h \
  /usr/include/bits/types/struct___jmp_buf_tag.h \
  /usr/include/bits/pthread_stack_min-dynamic.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/atomic_word.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
  /usr/include/sys/single_threaded.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ext/alloc_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/alloc_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_construct.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ext/string_conversions.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/cstdio \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/cerrno \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/bits/types/error_t.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/charconv.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/functional_hash.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/hash_bytes.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/basic_string.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/vector \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_uninitialized.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_vector.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_bvector.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/vector.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/map \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_tree.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ext/aligned_buffer.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_map.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/tuple \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/utility \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_relops.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/array \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/uses_allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/invoke.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_multimap.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/erase_if.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/memory \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_tempbuf.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_raw_storage_iter.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/align.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bit \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/unique_ptr.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/shared_ptr.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/shared_ptr_base.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/typeinfo \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/allocated_ptr.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/refwrap.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ext/concurrence.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/exception \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/exception_ptr.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/cxxabi_init_exception.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/nested_exception.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/shared_ptr_atomic.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/atomic_base.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/atomic_lockfree_defines.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/backward/auto_ptr.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbTypes.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbAssert.h \
+ /usr/include/c++/12.2.1/ext/concurrence.h \
+ /usr/include/c++/12.2.1/exception \
+ /usr/include/c++/12.2.1/bits/exception_ptr.h \
+ /usr/include/c++/12.2.1/bits/cxxabi_init_exception.h \
+ /usr/include/c++/12.2.1/bits/nested_exception.h \
+ /usr/include/c++/12.2.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/12.2.1/bits/atomic_base.h \
+ /usr/include/c++/12.2.1/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/12.2.1/backward/auto_ptr.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbTypes.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbAssert.h \
  /usr/include/assert.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbMalloc.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbString.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/iostream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ostream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ios \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/ios_base.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/locale_classes.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/locale_classes.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/system_error \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/error_constants.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/stdexcept \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/streambuf \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/streambuf.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/basic_ios.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/locale_facets.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/cwctype \
- /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/ctype_base.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/streambuf_iterator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/ctype_inline.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/locale_facets.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/basic_ios.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/ostream.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/istream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/istream.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/sstream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/sstream.tcc \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbUtils.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/vendor/sole.hpp \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/functional \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/std_function.h \
- /usr/include/memory.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/cstring \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/ctime \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/iomanip \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/locale \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/locale_facets_nonio.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/time_members.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/messages_members.h \
- /usr/include/libintl.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/codecvt.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/locale_facets_nonio.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/locale_conv.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/random \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/cmath \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbMalloc.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbString.h \
+ /usr/include/c++/12.2.1/iostream /usr/include/c++/12.2.1/ostream \
+ /usr/include/c++/12.2.1/ios /usr/include/c++/12.2.1/bits/ios_base.h \
+ /usr/include/c++/12.2.1/bits/locale_classes.h \
+ /usr/include/c++/12.2.1/bits/locale_classes.tcc \
+ /usr/include/c++/12.2.1/system_error \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
+ /usr/include/c++/12.2.1/stdexcept /usr/include/c++/12.2.1/streambuf \
+ /usr/include/c++/12.2.1/bits/streambuf.tcc \
+ /usr/include/c++/12.2.1/bits/basic_ios.h \
+ /usr/include/c++/12.2.1/bits/locale_facets.h \
+ /usr/include/c++/12.2.1/cwctype /usr/include/wctype.h \
+ /usr/include/bits/wctype-wchar.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+ /usr/include/c++/12.2.1/bits/streambuf_iterator.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+ /usr/include/c++/12.2.1/bits/locale_facets.tcc \
+ /usr/include/c++/12.2.1/bits/basic_ios.tcc \
+ /usr/include/c++/12.2.1/bits/ostream.tcc /usr/include/c++/12.2.1/istream \
+ /usr/include/c++/12.2.1/bits/istream.tcc /usr/include/c++/12.2.1/sstream \
+ /usr/include/c++/12.2.1/bits/sstream.tcc \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbUtils.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/vendor/sole.hpp \
+ /usr/include/c++/12.2.1/functional \
+ /usr/include/c++/12.2.1/bits/std_function.h /usr/include/memory.h \
+ /usr/include/c++/12.2.1/cstring /usr/include/c++/12.2.1/ctime \
+ /usr/include/c++/12.2.1/iomanip /usr/include/c++/12.2.1/locale \
+ /usr/include/c++/12.2.1/bits/locale_facets_nonio.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/12.2.1/bits/codecvt.h \
+ /usr/include/c++/12.2.1/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/12.2.1/bits/locale_conv.h \
+ /usr/include/c++/12.2.1/random /usr/include/c++/12.2.1/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
- /usr/include/bits/iscanonical.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/limits \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/random.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/uniform_int_dist.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/x86_64-pc-linux-gnu/bits/opt_random.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/random.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/numeric \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/c++/bits/stl_numeric.h \
- /usr/include/arpa/inet.h /usr/include/netinet/in.h \
- /usr/include/sys/socket.h /usr/include/bits/types/struct_iovec.h \
- /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
- /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/12.2.1/limits \
+ /usr/include/c++/12.2.1/bits/random.h \
+ /usr/include/c++/12.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/opt_random.h \
+ /usr/include/c++/12.2.1/bits/random.tcc /usr/include/c++/12.2.1/numeric \
+ /usr/include/c++/12.2.1/bits/stl_numeric.h /usr/include/arpa/inet.h \
+ /usr/include/netinet/in.h /usr/include/sys/socket.h \
+ /usr/include/bits/types/struct_iovec.h /usr/include/bits/socket.h \
+ /usr/include/bits/socket_type.h /usr/include/bits/sockaddr.h \
+ /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
+ /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
  /usr/include/bits/types/struct_osockaddr.h /usr/include/bits/in.h \
  /usr/include/net/if.h /usr/include/sys/ioctl.h \
  /usr/include/bits/ioctls.h /usr/include/asm/ioctls.h \
@@ -243,24 +214,24 @@ CMakeFiles/wb.dir/libwb/wbFile.cpp.o: \
  /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
  /usr/include/bits/ioctl-types.h /usr/include/sys/ttydefaults.h \
  /usr/include/sys/time.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbArg.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbCUDA.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbCast.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbComparator.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbDirectory.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbExit.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbExport.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbFile.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbPPM.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbImage.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbImport.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbInit.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbLogger.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbMD5.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbMPI.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbSolution.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbSparse.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbThrust.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbTimer.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbPath.h \
- /home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/libwb/wbDataset.h
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbArg.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbCUDA.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbCast.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbComparator.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbDirectory.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbExit.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbExport.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbFile.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbPPM.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbImage.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbImport.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbInit.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbLogger.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbMD5.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbMPI.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbSolution.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbSparse.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbThrust.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbTimer.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbPath.h \
+ /home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/libwb/wbDataset.h

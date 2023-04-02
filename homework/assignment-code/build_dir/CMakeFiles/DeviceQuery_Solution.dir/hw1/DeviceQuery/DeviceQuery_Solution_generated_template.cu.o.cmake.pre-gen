@@ -58,18 +58,18 @@ endif()
 
 # Set these up as variables to make reading the generated file easier
 set(CMAKE_COMMAND "/usr/bin/cmake") # path
-set(source_file "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/labs/hw1/DeviceQuery/template.cu") # path
-set(NVCC_generated_dependency_file "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/DeviceQuery_Solution_generated_template.cu.o.NVCC-depend") # path
-set(cmake_dependency_file "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/DeviceQuery_Solution_generated_template.cu.o.depend") # path
+set(source_file "/home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/labs/hw1/DeviceQuery/template.cu") # path
+set(NVCC_generated_dependency_file "/home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/DeviceQuery_Solution_generated_template.cu.o.NVCC-depend") # path
+set(cmake_dependency_file "/home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/DeviceQuery_Solution_generated_template.cu.o.depend") # path
 set(CUDA_make2cmake "/usr/share/cmake/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "/usr/share/cmake/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
-set(CUDA_HOST_COMPILER "/opt/cuda/bin/gcc") # path
+set(CUDA_HOST_COMPILER "/usr/bin/cc") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/.") # path
-set(generated_file_internal "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/./DeviceQuery_Solution_generated_template.cu.o") # path
-set(generated_cubin_file_internal "/home/alan-manuel/Downloads/school/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/./DeviceQuery_Solution_generated_template.cu.o.cubin.txt") # path
+set(generated_file_path "/home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/.") # path
+set(generated_file_internal "/home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/./DeviceQuery_Solution_generated_template.cu.o") # path
+set(generated_cubin_file_internal "/home/alan-manuel/Downloads/569-high-performance-computing/homework/assignment-code/build_dir/CMakeFiles/DeviceQuery_Solution.dir/hw1/DeviceQuery/./DeviceQuery_Solution_generated_template.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/opt/cuda/bin/nvcc") # path
 set(CUDA_NVCC_FLAGS  --gpu-architecture;sm_60 -Xcompiler -Wno-unused-function,-Wno-unused-parameter -std=c++11 ;; ) # list
@@ -184,7 +184,7 @@ cuda_execute_process(
 # For CUDA 2.3 and below, -G -M doesn't work, so remove the -G flag
 # for dependency generation and hope for the best.
 set(depends_CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS}")
-set(CUDA_VERSION 11.8)
+set(CUDA_VERSION 12.1)
 if(CUDA_VERSION VERSION_LESS "3.0")
   # Note that this will remove all occurrences of -G.
   list(REMOVE_ITEM depends_CUDA_NVCC_FLAGS "-G")
