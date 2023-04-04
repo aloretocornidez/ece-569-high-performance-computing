@@ -31,7 +31,7 @@
 ###module load cuda11/11.0
 
 ### set directory for job execution, replace the following path with your own path
-hw_path=~akoglu/class/ece569/build_dir
+hw_path=~/ece569/build_dir
 
 cd $hw_path
 ###
@@ -50,7 +50,7 @@ count=0
 for j in ${PATHS[@]}
 do
    file=output$((count)).txt
-   /usr/bin/time ./Histogram_Solution -e $j/output.raw -i $j/input.raw 0 -t integral_vector > Histogram_output/$file
+   /usr/bin/time ./Histogram_Solution -e $j/output.raw -i $j/input.raw 1 -t integral_vector > Histogram_output/$file
  count=$((count+1))
 done
 

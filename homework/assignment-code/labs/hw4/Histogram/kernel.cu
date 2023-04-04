@@ -5,21 +5,21 @@ __global__ void histogram_global_kernel(unsigned int *input, unsigned int *bins,
 {
 
     // Insert your code here
-    int i = threadIdx.x + blockIdx.x * blockDim.x;
+    int thread = threadIdx.x + blockIdx.x * blockDim.x;
 
     // Stride
     int stride = blockDim.x * gridDim.x;
 
-    while (i < stride)
+    while (thread < num_elements)
     {
         // Value of the data point
-        int value = input[i];
+        int value = input[thread];
 
         // Adding the value to the corresponding bin.
         atomicAdd(&(bins[value]), 1);
 
         // Incrementing the stride value.
-        i += stride;
+        thread += stride;
     }
 }
 
@@ -28,24 +28,51 @@ __global__ void histogram_global_kernel(unsigned int *input, unsigned int *bins,
 // include comments describing your approach
 __global__ void histogram_shared_kernel(unsigned int *input, unsigned int *bins, unsigned int num_elements, unsigned int num_bins)
 {
-
-    // insert your code here
-    // Insert your code here
-    int i = threadIdx.x + blockIdx.x * blockDim.x;
+    // Initializng shared memory histogram.
+    __shared__ unsigned int privateHistogram[4096];
+    // Thread id.
+    unsigned int i = threadIdx.x + blockIdx.x * blockDim.x;
 
     // Stride
-    int stride = blockDim.x * gridDim.x;
+    unsigned int stride = blockDim.x * gridDim.x;
 
-    while (i < stride)
+    // Initialize all values in the private histogram to zero.
+    // While loop used because there may not be enough threads in a block to initialize all bins.
+    unsigned int index = threadIdx.x;
+    unsigned int initializationStride = blockDim.x;
+    while (index < 4096)
+    {
+        privateHistogram[index] = 0;
+
+        // This increases the index by the amount of threads in the block.
+        index += initializationStride;
+    }
+
+
+    // Update the shared memory histogram.
+    while (i < num_elements)
     {
         // Value of the data point
-        int value = input[i];
+        unsigned int value = input[i];
 
         // Adding the value to the corresponding bin.
-        atomicAdd(&(bins[value]), 1);
+        atomicAdd(&(privateHistogram[value]), 1);
 
         // Incrementing the stride value.
         i += stride;
+    }
+
+    // Wait for all threads to finish their atomic add operations.
+    __syncthreads();
+
+    // Set all global histogram values
+    index = threadIdx.x;
+    while (index < 4096)
+    {
+        atomicAdd(&(bins[index]), privateHistogram[index]);
+
+        // This increases the index by the amount of threads in the block.
+        index += initializationStride;
     }
 }
 
