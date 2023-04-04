@@ -1,0 +1,21 @@
+# ninja log v5
+3	58	1680551362145187577	CMakeFiles/wb.dir/libwb/wbMPI.cpp.o	7f1aac3cf258951b
+2	1094	1680551363191816812	CMakeFiles/wb.dir/libwb/wbInit.cpp.o	b262100dc267f09a
+1	1099	1680551363198483240	CMakeFiles/wb.dir/libwb/wbDataset.cpp.o	b4de573119b0731e
+1	1148	1680551363231815382	CMakeFiles/wb.dir/libwb/wbCUDA.cpp.o	21d8736b71d5ce3a
+12	1198	1680551363285146808	CMakeFiles/wb.dir/libwb/wbPath.cpp.o	8d1b099883444ec5
+1	1218	1680551363315145734	CMakeFiles/wb.dir/libwb/wbDirectory.cpp.o	a27cede761b7e1c5
+1	1308	1680551363401809302	CMakeFiles/wb.dir/libwb/wbArg.cpp.o	121e6cbb4359a36b
+1	1324	1680551363415142158	CMakeFiles/wb.dir/libwb/wbExit.cpp.o	9e96b22c7ae676ab
+7	1335	1680551363431808230	CMakeFiles/wb.dir/libwb/wbPPM.cpp.o	d7ba24fe5a856581
+2	1597	1680551363695132145	CMakeFiles/wb.dir/libwb/wbImport.cpp.o	aed0e7f8e25d4f31
+2	1657	1680551363755130000	CMakeFiles/wb.dir/libwb/wbFile.cpp.o	3343bf52f76534e2
+2	1716	1680551363815127854	CMakeFiles/wb.dir/libwb/wbExport.cpp.o	1c06d7e0d1a1a3e0
+3	1783	1680551363881792136	CMakeFiles/wb.dir/libwb/wbLogger.cpp.o	773c96bbf974b51
+2	1853	1680551363951789633	CMakeFiles/wb.dir/libwb/wbImage.cpp.o	79e319756732e828
+1148	2034	1680551364131783197	CMakeFiles/wb.dir/libwb/wbUtils.cpp.o	4b931db7822c74a2
+1096	2065	1680551364161782123	CMakeFiles/wb.dir/libwb/wbSparse.cpp.o	59a6374678b931e2
+1218	2089	1680551364188447837	CMakeFiles/VectorAdd_DatasetGenerator.dir/hw2/VectorAdd/dataset_generator.cpp.o	35d1c529bb9f8202
+1309	2211	1680551364308443545	CMakeFiles/ImageColorToGrayscale_DatasetGenerator.dir/hw2/ImageColorToGrayscale/dataset_generator.cpp.o	dc6c9ed00c4c6dbe
+1099	2589	1680551364688429956	CMakeFiles/wb.dir/libwb/wbTimer.cpp.o	ad3dc12e281191ab
+58	2896	1680551364995085657	CMakeFiles/wb.dir/libwb/wbSolution.cpp.o	888e608e5b1efe0a
