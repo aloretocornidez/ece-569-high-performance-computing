@@ -185,26 +185,14 @@
 			"path" : "libwb/sources.cmake"
 		},
 		{
-			"path" : "hw2/sources.cmake"
+			"path" : "hw4/sources.cmake"
 		},
 		{
-			"path" : "hw2/VectorAdd/sources.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "build/CMakeFiles/VectorAdd_Solution.dir/hw2/VectorAdd/VectorAdd_Solution_generated_solution.cu.o.depend"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake/Modules/FindCUDA/run_nvcc.cmake"
-		},
-		{
-			"path" : "hw2/ImageColorToGrayscale/sources.cmake"
+			"path" : "hw4/Histogram/sources.cmake"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/ImageColorToGrayscale_Solution.dir/hw2/ImageColorToGrayscale/ImageColorToGrayscale_Solution_generated_solution.cu.o.depend"
+			"path" : "build/CMakeFiles/Histogram_Solution.dir/hw4/Histogram/Histogram_Solution_generated_solution.cu.o.depend"
 		},
 		{
 			"isCMake" : true,
@@ -213,11 +201,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/VectorAdd_Solution.dir/hw2/VectorAdd/VectorAdd_Solution_generated_solution.cu.o.cmake.pre-gen"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "build/CMakeFiles/ImageColorToGrayscale_Solution.dir/hw2/ImageColorToGrayscale/ImageColorToGrayscale_Solution_generated_solution.cu.o.cmake.pre-gen"
+			"path" : "build/CMakeFiles/Histogram_Solution.dir/hw4/Histogram/Histogram_Solution_generated_solution.cu.o.cmake.pre-gen"
 		}
 	],
 	"kind" : "cmakeFiles",

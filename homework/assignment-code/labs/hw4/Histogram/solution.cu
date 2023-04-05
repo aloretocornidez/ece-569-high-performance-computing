@@ -79,17 +79,23 @@ void histogram(unsigned int *input, unsigned int *bins, unsigned int num_element
     CUDA_CHECK(cudaMemset(bins, 0, num_bins * sizeof(unsigned int)));
     // Launch histogram kernel on the bins
     {
-      dim3 blockDim(512), gridDim(30);
-      histogram_shared_optimized<<<gridDim, blockDim,
-                                   num_bins * sizeof(unsigned int)>>>(
-          input, bins, num_elements, num_bins);
+      // Setting new block and grid dimensions to take better advantage of shared memory.
+      // A larger block dimension with a smaller grid dimension allows global memory to be accessed less times.
+      // 
+      int BLOCKDIM = 1024;
+      int GRIDDIM = 32;
+      
+      dim3 blockDim(BLOCKDIM), gridDim(GRIDDIM);
+      
+      histogram_shared_optimized<<<gridDim, blockDim, num_bins * sizeof(unsigned int)>>>(input, bins, num_elements, num_bins);
       CUDA_CHECK(cudaGetLastError());
       CUDA_CHECK(cudaDeviceSynchronize());
     }
 
     // Make sure bin values are not too large
     {
-      dim3 blockDim(512);
+      int BLOCKDIM = 512;
+      dim3 blockDim(BLOCKDIM);
       dim3 gridDim((num_bins + blockDim.x - 1) / blockDim.x);
       convert_kernel<<<gridDim, blockDim>>>(bins, num_bins);
       CUDA_CHECK(cudaGetLastError());

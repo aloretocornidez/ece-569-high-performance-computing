@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "VectorAdd_Solution"
+			"path" : "Histogram_Solution"
 		}
 	],
 	"backtrace" : 8,
@@ -21,8 +21,8 @@
 		[
 			"/usr/share/cmake/Modules/FindCUDA.cmake",
 			"CMakeLists.txt",
-			"hw2/VectorAdd/sources.cmake",
-			"hw2/sources.cmake"
+			"hw4/Histogram/sources.cmake",
+			"hw4/sources.cmake"
 		],
 		"nodes" : 
 		[
@@ -94,7 +94,7 @@
 			"id" : "wb::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "VectorAdd_Solution::@6890427a1f51a3e7e1df",
+	"id" : "Histogram_Solution::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -164,8 +164,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "VectorAdd_Solution",
-	"nameOnDisk" : "VectorAdd_Solution",
+	"name" : "Histogram_Solution",
+	"nameOnDisk" : "Histogram_Solution",
 	"paths" : 
 	{
 		"build" : ".",
@@ -193,12 +193,12 @@
 		{
 			"backtrace" : 8,
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/VectorAdd_Solution.dir/hw2/VectorAdd/VectorAdd_Solution_generated_solution.cu.o",
+			"path" : "build/CMakeFiles/Histogram_Solution.dir/hw4/Histogram/Histogram_Solution_generated_solution.cu.o",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 8,
-			"path" : "hw2/VectorAdd/solution.cu",
+			"path" : "hw4/Histogram/solution.cu",
 			"sourceGroupIndex" : 1
 		}
 	],

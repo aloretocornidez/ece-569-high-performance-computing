@@ -17,6 +17,8 @@ static unsigned int *generate_data(size_t n, unsigned int num_bins) {
   unsigned int *data = (unsigned int *)malloc(sizeof(unsigned int) * n);
   for (unsigned int i = 0; i < n; i++) {
     data[i] = rand() % num_bins;
+    // data[i] = 2 % num_bins;
+
   }
   return data;
 }

@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "2.8"
+						"string" : "3.0"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -17,9 +17,7 @@
 					[
 						0,
 						1,
-						2,
-						3,
-						4
+						2
 					]
 				}
 			],
@@ -36,9 +34,7 @@
 					[
 						0,
 						1,
-						2,
-						3,
-						4
+						2
 					]
 				}
 			],
@@ -46,30 +42,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "ImageColorToGrayscale_DatasetGenerator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ImageColorToGrayscale_DatasetGenerator-Release-03fb9ed5b062ba7512ad.json",
-					"name" : "ImageColorToGrayscale_DatasetGenerator",
+					"id" : "Histogram_DatasetGenerator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Histogram_DatasetGenerator-Release-f083d06474f538dee0e4.json",
+					"name" : "Histogram_DatasetGenerator",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "ImageColorToGrayscale_Solution::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ImageColorToGrayscale_Solution-Release-431ff83c563f12d74e67.json",
-					"name" : "ImageColorToGrayscale_Solution",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "VectorAdd_DatasetGenerator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-VectorAdd_DatasetGenerator-Release-910ba29dc491497189ff.json",
-					"name" : "VectorAdd_DatasetGenerator",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "VectorAdd_Solution::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-VectorAdd_Solution-Release-41e14699864e98972393.json",
-					"name" : "VectorAdd_Solution",
+					"id" : "Histogram_Solution::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Histogram_Solution-Release-924ec070ca360879277b.json",
+					"name" : "Histogram_Solution",
 					"projectIndex" : 0
 				},
 				{
